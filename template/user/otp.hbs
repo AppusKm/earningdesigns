@@ -1,0 +1,19 @@
+<html>
+    <body>
+      	<form method="post" action="/otp">
+                    <label>Mobile<span>*</span></label>
+                    <input name="mobile" type="text" id="#" placeholder="Mobile" value="{{mob}}"  readonly="true" />
+                  	{{#if user }}
+                    <label>Username<span>*</span></label>
+                    <input name="name" type="text" id="#" placeholder="username" value=""  />
+                    {{/if}}
+                     <label>OTP<span>*</span></label>
+                    <input name="otp" type="text" id="#" placeholder="otp"  />
+                    	{{#if message }}
+                        <h4>{{error}}</h4>
+                      {{/if}}
+				  <button type="submit" class="openBtn_login btn-lg" style="width: 200px  !important;">Login Now</button>
+
+        </form>
+    </body>
+</html>

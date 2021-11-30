@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>Foodoyes Dashboard </title>
+<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+<link href="{{baseurl}}css/foodoyes.css" rel="stylesheet" type="text/css" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="{{baseurl}}css/menu.css" rel="stylesheet" type="text/css" />
+<link href="{{baseurl}}css/owl.css" rel="stylesheet" type="text/css" />
+<meta name="description" content="UnniMaash">
+<meta name="keywords" content="UnniMaash">
+<link href="fonts/fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet" />
+
+</head>
+
+<body>
+ 
+ <!--INDEX SLIDER-->
+ 
+
+	
+
+<div class="login_bagckground">
+	
+    
+    	<div class="foobi"><img src="images/foobi.png" alt="FOODOYES APPS" /></div>
+        
+        
+        <div class="login_content">
+        <div class="login_fild">
+        	<div class="items_display2">
+				{{#if errorMsg}}
+				<div class="alert alert-success" role="alert" id="loginAlert">
+    <p style="text-align: center;color:red"></p>
+</div>
+{{/if}}
+			<div class="items_display2_firstline_login">
+				<form method="post" action="/adddata" enctype="multipart/form-data">
+			   <ul>
+				<li>
+					 <div class="items_display2_firstline_inn_login">
+					<label>Image title<span>*</span></label>
+                    <input name="imageTitle" type="text" id="#" placeholder=""  required />
+                    <span id="#1" class="spn_Error" style="display:none;"></span>
+					</div>
+				</li>
+				   
+				<li>
+					 <div class="items_display2_firstline_inn_login">
+					<label>Image description<span>*</span></label>
+                    <input name="text" type="description" id="#" placeholder=""  required />
+                    <span id="#1" class="spn_Error" style="display:none;"></span>
+					</div>
+				</li>
+                <li>
+					 <div class="items_display2_firstline_inn_login">
+					<label>Image <span>*</span></label>
+                    <input name="Image" type="file" id="#" placeholder="Partner Name"  required />
+                    <span id="#1" class="spn_Error" style="display:none;"></span>
+					</div>
+				</li>
+                  <li>
+					 <div class="items_display2_firstline_inn_login">
+					<label>Item for sale <span>*</span></label>
+                   <input type="radio" id="item_for_sale" name="item_for_sale" value="item_for_sale">
+                   <label>Price <span>*</span></label>
+                   <input type="text" id="item_for_sale" name="item_for_sale" value="">
+                    <label>no_it_free <span>*</span></label>
+                    <input type="radio" id="no_it_free" name="no_it_free" value="no_it_free">
+					</div>
+				</li>
+                <li>
+				  <button type="submit" class="openBtn_login btn-lg" style="width: 200px  !important;">Add</button>
+				</ul>
+			   
+			   </form>
+			   <div class="clear"></div>
+			   </div>
+			   
+			   
+			</div>
+        </div>
+        
+    </div>
+    
+</div>
+
+	
+
+
+  
+ 
+ <script src="{{baseurl}}js/main_jQuery.js" type="text/javascript"></script> 
+ <script src="{{baseurl}}js/popup.js" type="text/javascript"></script> 
+
+
+</body>
+</html>
